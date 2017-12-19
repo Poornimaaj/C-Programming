@@ -3,11 +3,10 @@ int main()
 {
 int n,i,j,flag;
 scanf("%d",&n);
-for(i=0;i<n;i++)
+
+for(j=2;j<=n/2;j++)
 {
-for(j=2;j<=i/2;j++)
-{
-if(i%j==0)
+if(n%j==0)
 flag=1;
 else
 flag=0;
