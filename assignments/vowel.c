@@ -8,4 +8,5 @@ if((c=='a')||(c=='e')||(c=='i')||(c=='o')||(c=='u')||(c=='A')||(c=='E')||(c=='I'
 printf("\n vowel");
 else
 printf("\n consonant);
+return 0;
 }
