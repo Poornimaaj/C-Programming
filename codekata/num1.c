@@ -12,11 +12,15 @@ int main()
        if(s[i]>='0' && s[i]<='9')
        {
        count++;
-       printf("%d",count);
+       flag=1;
        }
        else
-       printf("%d",count);
+       flag=0;
    }
+   if(flag==1)
+      printf("%d",count);
+   else
+      printf("0");
 
     return 0;
 }
