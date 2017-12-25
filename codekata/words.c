@@ -9,8 +9,10 @@ int main()
    for(i=0;i<l;i++)
    {
        if(s[i]==' ')
+       {
        count++;
        printf("%d",count);
+       }
        else
        printf("%d",count);
    }
