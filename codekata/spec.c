@@ -10,8 +10,10 @@ int main()
    for(i=0;i<l;i++)
    {
        if(c[i]>=32 && c[i]<=64)
+       {
        count++;
        printf("%d",count);
+       }
        else
        printf("%d",count);
    }
