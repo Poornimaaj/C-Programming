@@ -4,7 +4,7 @@ void main()
 {
     char s[100];
     int l,count=0,i,c;
-    scanf("%s",s);
+    gets(s);
     l=strlen(s);
     for(i=0;i<l;i++)
      {
@@ -15,5 +15,6 @@ void main()
    
     c=l-count;
     printf("%d",c);
+    
     
 }
