@@ -2,14 +2,14 @@
 #include<string.h>
 int main()
 {
-   int a,b;
-   scanf("%d %d",&a,&b);
+   int x,y;
+   scanf("%d %d",&x,&y);
    if(a!=0)
    {
-       a=a^b;
-       b=a^b;
-       a=a^b;
+       x=x^y;
+      y=y^x;
+      x=x^y;
    }
-   printf("%d %d",a,b);
+   printf("%d %d",x,y);
     return 0;
 }
