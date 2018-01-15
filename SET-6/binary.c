@@ -1,41 +1,26 @@
 #include <stdio.h>
-
 #include<string.h>
-
-int main(void)
-
+int main() 
 {
-
-	char a[10];
-
+	char a[100];
+	int n,i,num,count=0;
 	scanf("%s",a);
-  int i,flag=0,m;
-
-	m=strlen(a);
-
-	for(i=0;i<m;i++)
-
+	n=strlen(a);
+	for(i=0;i<n;i++)
 	{
-
-		if(a[i]=='1' || a[i]=='0')
-
-			flag=1;
-
-		else
-
-			flag=0;
-
-			break;
-}
-
-	if(flag==1)
-
-		printf("yes");
-    else
-    printf("no");
-    
-    return 0;
-
-	
-
+	    if(a[i]=='0'||a[i]=='1')
+	    {   
+	        count++;
+	    }
+	    else
+	    {
+	       printf("no..");
+	       break;
+	    }
+	}
+	if(n==count)
+	{
+	     printf("yes");
+	}
+	return 0;
 }
