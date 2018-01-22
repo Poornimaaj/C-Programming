@@ -1,37 +1,35 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<string.h>
-
 int main()
 {
- char a[100],b[100],c[100];
- int i,l1,l2,l;
- scanf("%s",a);
+   char a[100],b[100];
+ int i,l1,j,l;
+ gets(a);
  l=strlen(a);
- i=0;
- do while(a[i]!=' ' || a[i]='\0')
+ for(i=0;i<l;i++)
  {
-     b[i]=a[i];
-     i++;
+ b[i]=a[i];
+
  }
  
- i++;
- do while(a[i]!=' ' || a[i]='\0')
+ for(i=0;i<l;i++)
  {
-     c[i]=a[i];
-     i++;
- }
-  
- i++;
- l1=strlen(b);
- l2=strlen(c);
- for(i=l1;i>=0;i--)
- {
- printf("%s",b[i]);
- }
- for(i=l2;i>=0;i--)
- {
- printf("%s",c[i]);
- }
+    if(a[i]==' ')
+    {
+    l1=i;
+     
+ 
 
+ for(j=l1-1;j>=0;j--)
+ {
+ printf("%c",b[j]);
+ }
+printf(" ");
+ for(j=l-1;j>=l1;j--)
+ {
+     printf("%c",b[j]);
+    }
+ }
+ }
     return 0;
 }
