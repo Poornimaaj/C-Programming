@@ -2,7 +2,7 @@
 
 int main()
 {
-   int i,j,l,h,flag=0;
+   int i,j,l,h,flag=0,count=0;
    scanf("%d %d",&l,&h);
    for(i=l;i<=h;i+2)
    {
@@ -15,10 +15,10 @@ int main()
                flag=0;
            }
            if(flag==1)
-           printf("%d",i);
+           count++;
        }
    
-
+printf("%d",count);
     return 0;
 }
 
