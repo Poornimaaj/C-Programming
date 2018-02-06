@@ -23,6 +23,8 @@ int main(void)
 	}
 	if(flag==1)
 	printf("yes");
+	else
+	printf("no");
 	return 0;
 }
 
