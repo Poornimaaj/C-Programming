@@ -1,15 +1,15 @@
 #include <stdio.h>
 
-int main(void) 
+int main() 
 {
-	int n,i,j,mul=1,flag=0;
+	int n,i,j,p=1,flag=0;
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
 		for(j=i;j>0;j--)
 		{
-			mul=mul*2;
-			if(mul==n)
+			p=p*2;
+			if(p==n)
 			{
 				flag=1;
 				break;
