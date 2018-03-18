@@ -14,7 +14,7 @@ void main()
         {
             s=ar(a[i]);
             t=ar(a[j]);
-            printf("%d,%d",s,t);
+            
             if(s<t)
             {
                 r=a[i];
@@ -41,19 +41,11 @@ void main()
 }
 int ar(int x)
 {
-    int y;
-    y=x/10;
-    if(y>9)
-     y=x/100;
-        else
-        return(y);
-        if(y>9)
-         y=x/1000;
-         else
-         return(y);
-          if(y>9)
-          y=x/10000;
-           return(y);
+   if(x<10)
+   return(x);
+   if((x/10)<10)
+   return(x/10);
+   else
+   return(x/100);
 }      
-    
     
