@@ -9,12 +9,12 @@ int main()
 	}
 	for(k=1;k<=q;k++)
 	{
-	    scanf("%d %d",&u,&v);
+	    scanf("%d %d",&u[k],&v[k]);
 	}
 		for(k=1;k<=q;k++)
 	{
 	     int s=0;
-	    for(i=u;i<=v;i++)
+	    for(i=u[k];i<=v[k];i++)
 	    {
 	       
 	    s=s+a[i];
