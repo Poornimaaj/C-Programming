@@ -15,9 +15,9 @@ int main()
        {
            if(a[i]>a[j])
            count++;
-           if(count==((n-i)-1))
-           printf("%d ",a[i]);
        }
+        if(count==((n-i)-1))
+           printf("%d ",a[i]);
     }
     printf("%d",a[n-1]);
 
