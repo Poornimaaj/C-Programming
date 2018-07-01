@@ -6,6 +6,7 @@ class Main
     {
       Scanner scan=new Scanner(System.in);
       int count=0;
+      
     System.out.print("\n\tEnter the string :");
     String s[]=scan.nextLine().split(" ");
         int n=s.length;
@@ -29,8 +30,8 @@ class Main
      r=n1%10;
      sum=sum+r;
     n1=n1/10;
-    }
-    while(sum>=10)
+   }
+    while(sum!=0)
      {
          count++;
             r2=sum%10;
@@ -49,11 +50,12 @@ class Main
     {
         if(b[i]>='0' && b[i]<='9')
         {
-        ad=ad+b[i];
-        System.out.print(ad);
+        ad=ad+b[i]-48;
         }
     }
-    while(ad>10)
+    
+    System.out.print("\n");
+    while(ad!=0)
     {
         count++;
         int rem=ad%10;
@@ -77,14 +79,14 @@ class Main
     
     String sp="!@#$%^&*()";
     char d[]=sp.toCharArray();
+    char sb=0;
     for(int k=0;k<d.length;k++)
     {
        
         System.out.print(d[p1-1]);
+        sb=d[p1-1];
         break;
     }
-
+    System.out.println("Password="+sum1+""+sum2+""+sum3+""+sb);
     }
 }
-
-
