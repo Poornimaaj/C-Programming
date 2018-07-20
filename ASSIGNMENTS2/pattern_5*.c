@@ -1,30 +1,19 @@
 #include <stdio.h>
 
-int main()
+int main() 
 {
-   int i,j,k,l,n,n1;
-   scanf("%d",&n);
-   n1=(n*2)-1;
-   for(i=0;i<n1;i++)
-   {
-      
-       printf("\n");
-       for(k=0;k<i;k++)
-        if((n-k)>0)
-       {
-       printf("\t%d",n-k);
-       }
-       for(j=i;j<n1-i;j++)
-       if((n-i)>0)
-       {
-       printf("\t%d",n-i);
-       }
-       for(l=n1-i;l<n1;l++)
-       if(n-((n1-l)-1)>0)
-       {
-       printf("\t%d",n-((n1-l)-1));
-       }
-   }
 
+    int n;
+    scanf("%d", &n);
+    int len = n*2 - 1;
+    for(int i=0;i<len;i++){
+        for(int j=0;j<len;j++){
+            int min = i < j ? i : j;
+            min = min < len-i ? min : len-i-1;
+            min = min < len-j-1 ? min : len-j-1;
+            printf("%d ", n-min);
+        }
+        printf("\n");
+    }
     return 0;
 }
