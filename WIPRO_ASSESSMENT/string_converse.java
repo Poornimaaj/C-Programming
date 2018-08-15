@@ -6,13 +6,15 @@ public class Main
 	int l,l1,i,j,k,a,b,t,t1;
 	String s[]=scan.nextLine().split(" ");
 	int n=scan.nextInt();
+	String str="",str1="";
 	String r="";
 	String r1="";
 	t=n/10;
 	t1=n%10;
 	for(i=0;i<s.length;i++)
 	{
-	    String str=s[t-1];
+	     str=s[t-1];
+	}
 	    l=str.length();
 	    if(l%2==0)
 	    {
@@ -37,7 +39,10 @@ public class Main
 	    }
 	        
 	    }
-	    String str1=s[t1-1];
+	    for(i=0;i<s.length;i++)
+	{
+	     str1=s[t1-1];
+	}
 	    l1=str1.length();
 	    if(l1%2==0)
 	    {
@@ -62,9 +67,13 @@ public class Main
 	    }
 	        
 	    }
+	for(i=0;i<s.length;i++)
+	{
+	    s[t-1]=r;
+	    s[t1-1]=r1;
+	    System.out.print(s[i]+" ");
 	}
-	    System.out.println(r);
-	    System.out.println(r1);
 	}
 	}
+
 
